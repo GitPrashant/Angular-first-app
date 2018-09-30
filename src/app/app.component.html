@@ -1,0 +1,9 @@
+<app-address-card [user]="user"></app-address-card>
+<input type="text" [(ngModel)]="inputText"> {{inputText}}
+<app-view-component></app-view-component>
+User name:
+<input type="text" [(ngModel)]="userName">
+<button (click)="search()">Search</button>
+<div *ngIf="response">
+  <p>Login name: {{response?.login}}</p>
+</div>
